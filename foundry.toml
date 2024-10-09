@@ -6,6 +6,12 @@ libs = ["lib"]
 remappings = [
     '@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/',
     '@openzeppelin/contracts=lib/openzeppelin-contracts/contracts',
+    '@src/=/home/osuolale/foundryStableCoin-f24/src/',
    
 ]
+
+[invariant]
+runs = 128
+depth = 128
+fail_on_revert = false
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
